@@ -17,11 +17,3 @@ plot(emaDifS,color = color.yellow)
 
 
 if emaDif > emaDifS 
-    if emaDif > 0
-        strategy.entry("long", strategy.long, (strategy.initial_capital + strategy.netprofit) * 2 / close)
-    else
-        strategy.entry("long", strategy.long, (strategy.initial_capital + strategy.netprofit) * 0.5 / close)
-
-
-if emaDif < emaDifS
-    strategy.close("long")
